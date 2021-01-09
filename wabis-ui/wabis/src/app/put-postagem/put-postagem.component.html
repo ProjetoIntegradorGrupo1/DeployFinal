@@ -1,0 +1,36 @@
+<div class="container">
+  <h3 class="text-center mt-5 mb-4">
+    Edite sua postagem
+  </h3>
+    <div class="row mt-5 mb-5">
+        <div class="col-md-12">
+  
+            <div>
+                <div class="form-group">
+                  <label for="titulo">Titulo da postagem:</label>
+                  <input type="text" class="form-control" id="titulo" aria-describedby="emailHelp" placeholder="Digite aqui o seu titulo" [(ngModel)]="postagem.titulo">
+                </div>
+
+                <div class="form-group">
+                    <label for="titulo">Texto da postagem:</label>
+                    <input type="text" class="form-control" id="titulo" aria-describedby="emailHelp" placeholder="Digite aqui o seu texto" [(ngModel)]="postagem.texto">
+                  </div>
+  
+                  <div class="form-group m-0">
+                    <label class="text-monospace" for="empresa">Escolha uma empresa ou <a routerLink="/cadastro-empresa">Cadastre uma nova</a></label>
+                    <select name ="empresa" id='empresa' [(ngModel)]="idEmpresa" (change)="findByIdEmpresa()" class="form-control"> 
+                        <option *ngFor="let item of listaEmpresas" value={{item.id}}>{{item.nome}}</option>
+                    </select> 
+                  </div>
+
+                <div class="d-flex justify-content-end mt-5">
+                    <button type="button" class="btn btn-outline-info w-25" (click)="salvar()">Salvar</button>
+                </div>
+            </div>
+  
+        </div>
+  
+    </div>
+
+    <div class="jumbotron jumbotron-fluid mb-0 w-100 bg-white p-5"></div>
+  </div>

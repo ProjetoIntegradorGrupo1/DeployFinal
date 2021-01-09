@@ -1,0 +1,60 @@
+<div class="container-fluid navbar-mainbg">
+
+  <nav class="navbar navbar-expand-lg pb-0 pt-0">
+
+    <img class="tm-logo mr-3" style="outline: none !important;" id="logo" src="\assets\wabisWhite.png" alt="" routerLink='/home'>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <fa-icon [icon]="faBars" class="faBars fa-2x p-3"></fa-icon>
+    </button>
+
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav mr-auto ">
+
+        <!-- <li class="nav-item">
+          <a routerLink='/home' title="Home">
+              <fa-icon [icon]="faHome" class="faHome fa-2x p-3"></fa-icon>
+          </a>
+        </li>    -->
+
+        <li class="nav-item">
+          <a class="nav-link texto text-light text-monospace text-uppercase font-weight-bold p-3 ml-2" routerLink='/home' >Home <span
+              class="sr-only">(página atual)</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link texto text-light text-monospace text-uppercase font-weight-bold  p-3 ml-2" routerLink="/feed">Feed</a>
+        </li>
+        
+       
+        <li class="nav-item">
+          <a class="nav-link texto text-light text-monospace text-uppercase font-weight-bold  p-3 ml-2" routerLink="/sobrenos" >Sobre</a>
+        </li>
+  
+
+      </ul>
+
+      <div class="d-flex justify-content-end" *ngIf='auth.btnSair()'>
+        <form class="form-inline my-2 my-lg-0">
+          <button class="btn btn-light text-monospace btn-sm my-2 my-sm-0" type="submit" (click)='sair()'>Sair</button>
+        </form>
+      </div>
+
+      <div  *ngIf='auth.btnLogin()'>
+        <li class="nav-item d-flex justify-content-end p-2 mr-2">
+          <!-- <a class="nav-link texto text-light text-monospace text-uppercase font-weight-bold p-3 ml-2" routerLink="/login">Login</a> -->
+          <button class="btn btn-outline-warning nav-link text-light text-monospace text-uppercase font-weight-bold ml-2 " type="submit" routerLink="/cadastro">Cadastro</button>
+        </li>
+      </div>
+
+      <div *ngIf='auth.btnLogin()'>
+        <li class="nav-item d-flex justify-content-end p-2 mr-2">
+          <!-- <a class="nav-link texto text-light text-monospace text-uppercase font-weight-bold p-3 ml-2" routerLink="/cadastro" >Cadastro</a> -->
+          <button class="btn btn-outline-warning nav-link texto text-light text-monospace text-uppercase font-weight-bold ml-2 " type="submit" routerLink="/login">  Login  </button>
+        </li>
+      </div>
+
+    </div>
+  </nav>
+
+</div>

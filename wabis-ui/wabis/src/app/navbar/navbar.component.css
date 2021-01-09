@@ -1,0 +1,51 @@
+
+
+.navbar-mainbg{
+	background-color: #1B4241;
+    padding: 0px;
+
+}
+.texto {
+    letter-spacing: .2rem;
+    font-size: 12pt;
+    
+}
+
+.tm-logo {    width: 80px;
+    height: 20px;
+}
+
+.colorHome{
+    color:#000000;
+}
+
+.faBars{
+    color:#ffffff;
+}
+
+.faBars:hover{
+    color:#979797;
+}
+
+.faHome:hover{
+  color: #CBD3DA;
+}
+
+
+
+.boxShadow {
+    border: 1px ;
+    padding: 0px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+}
+
+.navbarTop {
+    position: fixed;
+    top: 0;
+   
+}  
+
+#logo:hover{
+    cursor: pointer;
+}
+

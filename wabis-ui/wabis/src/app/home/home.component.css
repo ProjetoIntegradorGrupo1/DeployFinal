@@ -1,0 +1,28 @@
+.parallax{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnk9GW0FjJWmMiBMO3KBqXk7X5uYEIxdVc-Q&usqp=CAU');
+
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: 'center';
+    background-repeat: no-repeat;    
+    background-size: cover; 
+}
+
+.bg-jumbo{
+    background-color:#AFDFAF;
+}
+
+.tm-img {    width: 250px;
+    height: 250px;
+}
+
+@font-face{
+    font-family: "Lemon Milk";
+    src: "\assets\fonts\LEMONMILK-Medium.otf";
+}
+
+.lm{
+    font-family:  "Lemon Milk";
+}
+
+
